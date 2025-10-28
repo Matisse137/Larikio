@@ -1,11 +1,13 @@
-#include "test.h"
 
 
-int main()
+#include "../include/launch_manager.hpp"
+
+int main(int argc, char* argv[])
 {
-    auto obj = test();
+    auto obj = Launch_manager();
+    auto obj2 = Launch_manager();
 
-    obj.print_hello();
+    obj.debug();
 
     return 0;
 }
